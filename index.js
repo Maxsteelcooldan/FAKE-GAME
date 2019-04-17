@@ -1,4 +1,6 @@
-var player, controller;
+var player, controller, context, loop;
+  
+context = document.querySelector('#gc').getContext('2d')
 
 player {
   x = 0,
