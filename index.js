@@ -16,6 +16,22 @@ controller {
   right:false,
   keyListener:function(event) {
     
-    var yeet=
+    var yeet=(event.type == "keydown")?true:false;
+    
+    switch(event.keycode) {
+      
+      case 87:
+        controller.up = yeet;
+      break;
+      case 83:
+        controller.down = yeet;
+      break;
+      case 65:
+        controller.left = yeet;
+      break;
+      case :68
+        controller.down = yeet;
+      break;
+     }
   }
 };
