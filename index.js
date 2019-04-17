@@ -42,5 +42,8 @@ controller {
   }
 };
         loop = function() {
+          if(controller.left){
+            player.x -= 8
+          }
     
     }
