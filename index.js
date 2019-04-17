@@ -16,6 +16,7 @@ controller {
   up:false,
   left:false,
   right:false,
+  space:false,
   keyListener:function(event) {
     
     var yeet=(event.type == "keydown")?true:false;
@@ -31,9 +32,15 @@ controller {
       case 65:
         controller.left = yeet;
       break;
-      case :68
+      case 68:
         controller.down = yeet;
+      break;
+      case 32:
+        controller.space = yeet;
       break;
      }
   }
 };
+        loop = function() {
+    
+    }
