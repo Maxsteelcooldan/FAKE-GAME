@@ -65,10 +65,19 @@ controller {
       player.y_velocity *= 0.9;
           
           
-      context.fillstyle = "#c9ced6"
-      context.beginpath()
-      context.rect(0,0,100,100)
-      context.fill()
+  context.fillStyle = "#202020";
+  context.fillRect(0, 0, 320, 180);// x, y, width, height
+  context.fillStyle = "#ff0000";// hex for red
+  context.beginPath();
+  context.rect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+  context.fill();
+  context.strokeStyle = "#202830";
+  context.lineWidth = 4;
+  context.beginPath();
+  context.moveTo(0, 164);
+  context.lineTo(320, 164);
+  context.stroke();
+
       
       window.requestAnimationFrame(loop);
 
