@@ -1,6 +1,8 @@
 var player, controller, context, loop;
-  
+ 
 context = document.querySelector('#gc').getContext('2d')
+context.canvas.width = 100;
+context.canvas.height = 100;
 
 player {
   x = 0,
@@ -43,7 +45,35 @@ controller {
 };
         loop = function() {
           if(controller.left){
-            player.x -= 8
+            player.x_velocity -= 9;;
           }
-    
-    }
+          if(controller.up && player.jumping) {
+            player.y_velocity -= 9;
+            player.jumping=true;
+          }
+          if(controller.down) {
+            player.y_velocity += 9;
+          }
+          if(controller.right) {
+            player.x_velocity += 9;
+          }
+          
+      player.y_velocity = 1.5;
+      player.y += player.y_velocity;  
+      player.x += player.x_velocity;
+      player.x_velocity *= 0.9;
+      player.y_velocity *= 0.9;
+          
+          
+      context.fillstyle = "#c9ced6"
+      context.beginpath()
+      context.rect(0,0,100,100)
+      context.fill()
+      
+      window.requestAnimationFrame(loop);
+
+    };
+
+window.addkeyListener("keydown", controller.keyListener)
+window.addkeyListener("keyup", controller.keyListener)
+window.requestAnimationFrame(loop);
