@@ -63,7 +63,10 @@ controller = {
       player.x += player.x_velocity;
       player.x_velocity *= 0.9;
       player.y_velocity *= 0.9;
-          
+  if (player.x < ob.x + player.width && player.x + player.width > ob.x && player.y < ob.y + ob.height && player.y + player.height > b.y) { 
+   return:false;
+  }
+   return:true;    
           
   context.fillStyle = "#202020";
   context.fillRect(0, 0, 320, 180);// x, y, width, height
