@@ -4,7 +4,7 @@ context = document.querySelector('#gc').getContext('2d')
 context.canvas.width = 100;
 context.canvas.height = 100;
 
-player {
+player ={
   x = 0,
   y = 0,
   x_velocity = 0,
@@ -13,7 +13,7 @@ player {
   height = 10,
   width = 10
   };
-controller {
+controller = {
   down:false,
   up:false,
   left:false,
