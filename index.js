@@ -65,18 +65,13 @@ controller = {
       player.y_velocity *= 0.9;
     
           
-  context.fillStyle = "#202020";
-  context.fillRect(0, 0, 320, 180);// x, y, width, height
-  context.fillStyle = "#ff0000";// hex for red
+  context.fillStyle = "#b0e0e6"; // this is the sky or something don't know
+  context.fillRect(0, 0, 200, 300);#202830
+  context.fillStyle = "#ff0000";
   context.beginPath();
-  context.rect(player.x, player.y, player.width, player.height);
+  var ob = context.rect(player.x, player.y, player.width, player.height);
   context.fill();
-  context.strokeStyle = "#202830";
-  context.lineWidth = 4;
-  context.beginPath();
-  context.moveTo(0, 164);
-  context.lineTo(320, 164);
-  context.stroke();
+
 
       
       window.requestAnimationFrame(loop);
