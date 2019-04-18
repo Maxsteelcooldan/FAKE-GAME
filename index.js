@@ -66,7 +66,7 @@ controller = {
     
           
   context.fillStyle = "#b0e0e6"; // this is the sky or something don't know
-  context.fillRect(0, 0, 200, 300);#202830
+  context.fillRect(0, 0, 200, 300);
   context.fillStyle = "#ff0000";
   context.beginPath();
   var ob = context.rect(player.x, player.y, player.width, player.height);
