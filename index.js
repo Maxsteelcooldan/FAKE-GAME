@@ -5,8 +5,8 @@ context.canvas.width = 200;
 context.canvas.height = 300;
 
 player = {
-  x: 0,
-  y: 0,
+  x: 100,
+  y: 100,
   x_velocity: 0,
   y_velocity: 0,
   jumping:false,
