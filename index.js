@@ -86,6 +86,6 @@ controller = {
 
     };
 
-window.addkeyListener("keydown", controller.keyListener)
-window.addkeyListener("keyup", controller.keyListener)
+window.addEventListener("keydown", controller.keyListener)
+window.addEventListener("keyup", controller.keyListener)
 window.requestAnimationFrame(loop);
