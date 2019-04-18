@@ -1,8 +1,8 @@
 var player, controller, context, loop;
  
 context = document.querySelector('#gc').getContext('2d')
-context.canvas.width = 100;
-context.canvas.height = 100;
+context.canvas.width = 200;
+context.canvas.height = 300;
 
 player = {
   x: 0,
