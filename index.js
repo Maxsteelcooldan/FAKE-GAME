@@ -75,10 +75,7 @@ controller = {
   context.beginpath();
   var ob = context.rect(100,100,100,100);
   context.fill();
-  if (player.x < ob.x + player.width && player.x + player.width > ob.x && player.y < ob.y + ob.height && player.y + player.height > ob.y) { 
-   return false;
-  }
-   return true; 
+
 
       
       window.requestAnimationFrame(loop);
