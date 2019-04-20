@@ -45,7 +45,7 @@ controller = {
 };
         loop = function() {
           if(controller.left){
-            player.x_velocity -= 9;;
+            player.x_velocity -= 9;
           }
           if(controller.up && player.jumping) {
             player.y_velocity -= 9;
