@@ -72,7 +72,7 @@ controller = {
   context.rect(player.x, player.y, player.width, player.height);
   context.fill();
   context.fillstyle = "#afafaf";
-  context.beginpath();
+  context.beginPath();
   var ob = context.rect(100,100,100,100);
   context.fill();
 
